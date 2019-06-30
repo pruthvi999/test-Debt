@@ -48,6 +48,15 @@ function simplifyDebts() {
   for(let w = 0 ; w<deductedArr.length ;w++){
     result[w] = addedValues[w] + deductedArr[w];  // got resultentent array
   }
+  
+  let r =[];
+result.forEach(e => {
+        if(e == 0){
+          r.push(e);
+        }
+})
+ if(r.length == result.length){
+   console.log("Node Need To Transection");}
 
 let positiveArr = result.filter(num => num > 0);
 let negativeArr = result.filter(num => num < 0);
