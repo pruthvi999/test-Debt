@@ -56,7 +56,7 @@ result.forEach(e => {
         }
 })
  if(r.length == result.length){
-   console.log("Node Need To Transection");}
+   console.log("No Need To Transection");}
 
 let positiveArr = result.filter(num => num > 0);
 let negativeArr = result.filter(num => num < 0);
