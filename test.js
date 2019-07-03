@@ -38,7 +38,7 @@ function simplifyDebts() {
   })
   let z ;
   for(z = 0; z < extraMembers.length; z += 3){
-    console.log(extraMembers[z] + " owes " + extraMembers[z+1] + " " + extraMembers[z+2],"---->>>1"); // priented the extra members transections
+    console.log(extraMembers[z] + " owes " + extraMembers[z+1] + " " + extraMembers[z+2]); // priented the extra members transections
   }
   var arrV = [], arrVsub = [];
   for (let i = 0; i < members.length; i++) {    
@@ -95,7 +95,7 @@ let negativeArr = result.filter(num => num < 0);         // got paid by values f
         let i1 = result.indexOf(e) ;                    // got index of paid for values
         let j1 = result.indexOf(e1);                    // got index of paid by values 
         e - e1;
-         console.log(members[i1] + "  owes  " + members[j1] +" "+ -(e1),"---->>>2");         // priented the transections 
+         console.log(members[i1] + "  owes  " + members[j1] +" "+ -(e1));         // priented the transections 
       }
   })
 })
